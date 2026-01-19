@@ -4,13 +4,12 @@ A simple web block-explorer that consumes mempool's API
 
 ## Monorepo Structure
 
-This project is organized as a monorepo with the following packages:
+This project is organized as a monorepo with the following workspaces:
 
 ```
 block-explorer/
-├── packages/
-│   ├── frontend/          # React frontend (Vite)
-│   └── backend/           # Express backend API
+├── frontend/              # React frontend (Vite)
+├── backend/               # Express backend API
 ├── package.json           # Root workspace configuration
 └── README.md
 ```
@@ -75,7 +74,7 @@ npm start
 
 ## Packages
 
-### Frontend (`packages/frontend`)
+### Frontend (`frontend`)
 
 - **Framework**: React 18
 - **Build Tool**: Vite
@@ -85,9 +84,9 @@ npm start
   - API integration with backend
   - Responsive design
 
-See [packages/frontend/README.md](packages/frontend/README.md) for more details.
+See [frontend/README.md](frontend/README.md) for more details.
 
-### Backend (`packages/backend`)
+### Backend (`backend`)
 
 - **Framework**: Express
 - **Port**: 3001
@@ -97,7 +96,7 @@ See [packages/frontend/README.md](packages/frontend/README.md) for more details.
   - Health check endpoint
   - Block data endpoints (placeholder for mempool API integration)
 
-See [packages/backend/README.md](packages/backend/README.md) for more details.
+See [backend/README.md](backend/README.md) for more details.
 
 ## API Endpoints
 
