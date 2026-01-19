@@ -9,13 +9,19 @@ function App() {
   useEffect(() => {
     // Fetch health status
     fetch('/api/health')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
       .then(data => setHealth(data))
       .catch(err => console.error('Health check failed:', err));
 
     // Fetch blocks
     fetch('/api/blocks')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
       .then(data => {
         setBlocks(data.blocks);
         setLoading(false);
