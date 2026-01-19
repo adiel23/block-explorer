@@ -1,0 +1,74 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.App-header {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.health-status {
+  margin-top: 1rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.App-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App-main h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.blocks-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.block-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.block-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.block-height {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.block-hash {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: #555;
+  word-break: break-all;
+  margin-bottom: 0.5rem;
+}
+
+.block-time {
+  font-size: 0.875rem;
+  color: #777;
+}
